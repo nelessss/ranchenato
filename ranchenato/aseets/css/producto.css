@@ -1,0 +1,38 @@
+body{
+    margin: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+
+    background: url(./Vistas/Imagenes/background.jpg);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+nav{
+    padding-right: 10px;
+}
+
+.link{
+    backdrop-filter: blur(15px);
+    border: 1px white solid;
+    padding: 10px;
+    border-radius: 10px;
+    filter: opacity(50%);
+}
+
+.link:hover{
+    filter: opacity(100%);
+}

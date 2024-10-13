@@ -1,0 +1,190 @@
+body{
+    margin: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+nav{
+    padding-right: 10px;
+}
+
+.link{
+    backdrop-filter: blur(15px);
+    border: 1px white solid;
+    padding: 10px;
+    border-radius: 10px;
+    filter: opacity(50%);
+}
+
+.link:hover{
+    filter: opacity(100%);
+}
+/* END BANNER */
+
+.img{
+    border-radius: 10px;
+}
+
+/* Catalogo */
+
+.container{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1em;
+    width: 700px;
+    height: 500px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all 400ms;
+    padding-left: 290px;
+}
+.box{
+    position: relative;
+    background: var(--img) center center;
+    background-size: cover;
+    transition: all 400ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 200;
+}
+.box::after{
+    content: attr(data-text);
+    position: absolute;
+    bottom: 20px;
+    background: #000;
+    color: #fff;
+    padding: 10px 10px 10px 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    transform: translateY(60px);
+    opacity: 0;
+    transition: all 400ms;
+}
+
+.container:hover .box{
+    filter: grayscale(100%) opacity(24%);
+}
+
+.box:hover::after{
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: 400ms;
+}
+
+.container .box:hover{
+    filter: grayscale(0%) opacity(100%);
+}
+
+.box:nth-child(odd){
+    transform: translateY(-16px);
+}
+
+.box:nth-child(even){
+    transform: translateY(16);
+}
+
+.link {
+    border: 1px white solid;
+    padding: 10px;
+    border-radius: 10px;
+    filter: opacity(50%);
+}
+
+.link3 {
+    padding: 10px;
+    border-radius: 10px;
+    filter: opacity(50%);
+}
+.link:hover {
+    filter: opacity(100%);
+}
+.link3:hover {
+    filter: opacity(100%);
+}
+/* Form */
+form, .contenedor {
+    width: 400px;
+    backdrop-filter: blur(15px);
+    border: 0.5px white solid;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+.input {
+    width: 95%;
+    background: transparent;
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+}
+.input::placeholder {
+    color: white;
+    filter: opacity(70%);
+}
+.boton {
+    width: 30%;
+    background: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    filter: opacity(100%);
+    color: white;
+}
+.boton:hover {
+    filter: opacity(50%);
+}
+
+/* FORM CONTACTO */
+
+.input-contact{
+    width: 95%;
+    background: transparent;
+    padding: 10px;
+    color: white;
+    border: #fff;
+}
+
+.input-contact::placeholder {
+    color: white;
+    filter: opacity(70%);
+}
+
+textarea{
+    width: 95%;
+    height: 100px;
+    background: transparent;
+    padding: 10px;
+    color: white;
+    border: #fff;
+}
+
+textarea::placeholder {
+    color: white;
+    filter: opacity(70%);
+    font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+
+}
+
+
+
